@@ -49,6 +49,6 @@ service MessageService {
     GetConversationResponse GetConversations(1: list<ConversationId> conversation_ids, 2: ConversationFilter filter)
         throws (1: ConversationsNotFound ex)
 
-    void SaveConversations(1: list<Conversation> conversations, 2: User users)
+    void SaveConversations(1: list<Conversation> conversations, 2: User user)
 
 }
